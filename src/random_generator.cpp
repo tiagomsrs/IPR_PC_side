@@ -1,7 +1,19 @@
 #include "random_generator.hpp"
 
+#include <iostream>
+
 namespace rg  // randomg generator namespace
 {
+
+RandomGenerator::RandomGenerator()
+{
+    std::cout<<"Constructor"<<std::endl;
+}
+
+RandomGenerator::~RandomGenerator()
+{
+    std::cout<<"Destructor"<<std::endl;
+}
 
 RandomGenerator& RandomGenerator::GetInstance()
 {
