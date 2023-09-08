@@ -2,7 +2,7 @@
 
 prog_name=$(basename "$0")
 
-export EXE_NAME=random_generator_app # application binary name to execute
+export EXE_NAME=random_generator_app  # application binary name to execute
 
 echo "/////////////////////////////////"
 echo "//RANDOM GENERATOR BUILD SCRIPT//"
