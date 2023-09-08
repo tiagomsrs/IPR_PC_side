@@ -2,16 +2,10 @@
 
 #include "random_generator.hpp"
 
-namespace rg
-{
-
 int main (void)
 {
-    std::cout<<"Hello World!!"<<std::endl;
-
-    std::cout<< "Output: "<< RandomGenerator::GetInstance().GenerateNumber(123)<<std::endl;
+    std::cout<<"Hello World!xxx"<<std::endl;
+    std::cout<< "Output: "<< rg::RandomGenerator::GetInstance().GenerateNumber()<<std::endl;
 
     return EXIT_SUCCESS;
 }
-
-}  // namespace rg

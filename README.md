@@ -1,0 +1,1 @@
+In order to build the application run ./build_random_generator.sh

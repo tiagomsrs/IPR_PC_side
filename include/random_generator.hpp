@@ -1,3 +1,6 @@
+#ifndef RANDOM_GENERATOR_H_
+#define RANDOM_GENERATOR_H_
+
 #include <cstdint>
 #include <string>
 
@@ -9,7 +12,7 @@ class RandomGenerator final
   public:
     static RandomGenerator& GetInstance();
 
-    std::string GenerateNumber(uint32_t seed);
+    std::string GenerateNumber();
     std::string GetLastNumberGenerated();
     uint32_t GetLastSeedUsed();
 
@@ -28,3 +31,5 @@ class RandomGenerator final
 };
 
 }  // namespace rg
+
+#endif // RANDOM_GENERATOR_H_
