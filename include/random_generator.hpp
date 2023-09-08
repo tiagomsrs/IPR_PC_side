@@ -1,3 +1,6 @@
+#ifndef RANDOM_GENERATOR_H_
+#define RANDOM_GENERATOR_H_
+
 #include <cstdint>
 #include <string>
 
@@ -28,3 +31,5 @@ class RandomGenerator final
 };
 
 }  // namespace rg
+
+#endif // RANDOM_GENERATOR_H_
