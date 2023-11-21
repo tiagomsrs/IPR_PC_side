@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
 
-
-
 project(${UT_NAME} CXX)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -18,7 +16,26 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-# Now simply link against gtest or gtest_main as needed. Eg
+enable_testing()
+
+add_subdirectory(../../libraries build)
+
 add_executable($ENV{EXE_NAME} unittest_random_generator.cpp)
-target_link_libraries($ENV{EXE_NAME} gtest_main)
-add_test(NAME test1 COMMAND $ENV{EXE_NAME})
+
+target_include_directories($ENV{EXE_NAME}
+  PRIVATE
+    rg_utilities
+)
+
+target_link_libraries($ENV{EXE_NAME}
+  PRIVATE
+    GTest::gtest_main
+    rg_utilities
+)
+
+include(GoogleTest)
+gtest_discover_tests(unittest_random_generator)
+# add_test(NAME test1 COMMAND $ENV{EXE_NAME})
+
+
+
