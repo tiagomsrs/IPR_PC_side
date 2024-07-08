@@ -6,6 +6,6 @@
 
 TEST(RandomGenerator, Test1)
 {
-    std::cout<<"Testing"<<std::endl;
+    std::cout<<"testyy"<<std::endl;
     EXPECT_EQ(true, true);
 }

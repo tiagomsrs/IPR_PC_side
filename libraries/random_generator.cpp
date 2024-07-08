@@ -38,7 +38,7 @@ std::string RandomGenerator::GenerateNumber()
 
 std::string RandomGenerator::GetLastNumberGenerated()
 {
-
+    return "aaaa";
 }
 
 }  // namespace rg

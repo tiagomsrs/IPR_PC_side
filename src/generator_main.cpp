@@ -4,8 +4,8 @@
 
 int main (void)
 {
-    std::cout<<"Hello World!xxx"<<std::endl;
-    std::cout<< "Output: "<< rg::RandomGenerator::GetInstance().GenerateNumber()<<std::endl;
+    std::cout<<"Hello World!zz"<<std::endl;
+    std::cout<< "output: "<< rg::RandomGenerator::GetInstance().GenerateNumber()<<std::endl;
 
     return EXIT_SUCCESS;
 }
