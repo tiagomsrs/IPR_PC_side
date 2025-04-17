@@ -18,7 +18,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_subdirectory(../../libraries build)
+add_subdirectory(../libraries build)
 
 add_executable($ENV{EXE_NAME} unittest_random_generator.cpp)
 
